@@ -1,6 +1,5 @@
 provider "aws" {
     region = "ap-southeast-2"
-    version = "~> 2.35"
 }
 
 resource "aws_s3_bucket" "main" {
