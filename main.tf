@@ -3,15 +3,6 @@ provider "aws" {
     version = "~> 2.35"
 }
 
-terraform {
-  backend "remote" {
-    organization = "AabhusanInc"
-    workspaces {
-      name= "spacelift-demo"
-    }
-  }
-}
-
 resource "aws_s3_bucket" "main" {
   bucket = "test-spacelift"
   acl    = "private"
