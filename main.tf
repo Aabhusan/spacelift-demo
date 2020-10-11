@@ -5,7 +5,6 @@ provider "aws" {
 resource "aws_s3_bucket" "main" {
   bucket = "test-spacelift"
   acl    = "private"
-  region= "ap-southeast-2"
 
   lifecycle_rule{
     id="state"
